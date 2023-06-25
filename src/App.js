@@ -1,6 +1,9 @@
+import Footer from "./components/footer";
 function App() {
   return (
-    <div> Shop</div>
+    <div className="wrapper">
+      <Footer />
+    </div>
   );
 }
 
