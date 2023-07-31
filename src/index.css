@@ -203,12 +203,62 @@ main .add-to-cart {
   cursor: pointer;
   font-weight: 600;
 }
-
-main .add-to-cart:hover {
-  background: #cf6f49;
-  color: #fae8e1;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@700&family=Tinos&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
-footer {
+body {
+  background-color: #fff;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.families-are-our-priority {
+  margin-top: 128px;
+  border-radius: 24px;
+  background: #65665c;
+  padding: 96px 256px;
   text-align: center;
-  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.families-are-our-priority .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.families-are-our-priority .icon svg {
+  color: #65665c;
+  width: 25px;
+  height: 25px;
+}
+.families-are-our-priority h1 {
+  padding-top: 13px;
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.families-are-our-priority h2 {
+  padding: 29px 0 21px;
+  color: #e7e8e3;
+  font-size: 18px;
+  font-weight: 400;
+}
+.families-are-our-priority button {
+  width: 137px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
