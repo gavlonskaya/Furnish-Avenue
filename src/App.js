@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Items from "./components/Items";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   constructor(props) {
