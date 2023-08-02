@@ -10,9 +10,10 @@ body {
   font-weight: 300;
 }
 .wrapper {
-  width: 1280px;
-  margin: 50px auto;
+  max-width: 1900px;
+  margin: 50px 80px;
 }
+
 header {
   position: relative;
 }
@@ -203,6 +204,54 @@ main .add-to-cart {
   cursor: pointer;
   font-weight: 600;
 }
+.families-are-our-priority {
+  margin-top: 128px;
+  border-radius: 24px;
+  background: #65665c;
+  padding: 96px 256px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.families-are-our-priority .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.families-are-our-priority .icon svg {
+  color: #65665c;
+  width: 25px;
+  height: 25px;
+}
+.families-are-our-priority h1 {
+  padding-top: 13px;
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.families-are-our-priority h2 {
+  padding: 29px 0 21px;
+  color: #e7e8e3;
+  font-size: 18px;
+  font-weight: 400;
+}
+.families-are-our-priority button {
+  width: 137px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@700&family=Tinos&display=swap");
 * {
   margin: 0;
@@ -213,6 +262,201 @@ body {
   color: #222222;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+.wrapper {
+  max-width: 1900px;
+  margin: 50px 80px;
+}
+
+header {
+  position: relative;
+}
+header .logo {
+  font-weight: 600;
+  font-size: 20px;
+}
+header ul.nav {
+  float: right;
+  list-style: none;
+}
+header ul.nav li {
+  display: inline;
+  margin-left: 45px;
+  cursor: pointer;
+  color: #222222;
+  font-weight: 600;
+  font-size: 20px;
+  transition: opacity 500ms ease;
+}
+header ul.nav li:hover {
+  opacity: 0.5;
+}
+
+header .presentation {
+  margin: 50px 0;
+  background: url("./img/bg.jpeg") no-repeat;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  position: relative;
+}
+header .presentation::after {
+  content: "Find house for your family in minutes";
+  position: absolute;
+  top: 100px;
+  left: 80px;
+  width: 560px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #2a2c1f;
+}
+header .presentation::before {
+  content: "Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus";
+  position: absolute;
+  top: 235px;
+  left: 80px;
+  width: 560px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2a2c1f;
+}
+
+header .shop-cart-button {
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-cart-button:hover,
+header .shop-cart-button.active {
+  color: #cf6f49;
+  transform: scale(1.25);
+}
+
+header .shop-cart {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 470px;
+  background: #fafafa;
+  -webkit-box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+  -moz-box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+  box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+header .shop-cart .empty h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+header .shop-cart .summa {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+header .shop-cart .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+header .shop-cart .item .delete-icon {
+  color: #cf6f49;
+  float: right;
+  position: relative;
+  top: -20px;
+  cursor: pointer;
+  transform: color, transform 500ms ease;
+}
+header .shop-cart .item .delete-icon:hover {
+  color: #ae3a0c;
+  transform: scale(1.25);
+}
+
+header .shop-cart .item img {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item h3 {
+  color: #cf6f49;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px 10px 0 0;
+}
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+main .item img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: transform 500ms ease;
+}
+main .item img:hover {
+  transform: scale(1.05);
+}
+
+main h2 {
+  margin: 24px 20px 5px;
+  color: #2a2c1f;
+  font-size: 24px;
+  font-weight: 700;
+}
+main h3 {
+  margin: 0 20px;
+  color: #2a2c1f;
+  font-size: 18px;
+  font-weight: 700;
+}
+main p,
+main b {
+  margin: 16px 20px;
+  color: #65665c;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main .add-to-cart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #fae8e1;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #cf6f49;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
 }
 .families-are-our-priority {
   margin-top: 128px;
@@ -262,3 +506,4 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+
