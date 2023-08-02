@@ -14,19 +14,73 @@ body {
   margin: 50px auto;
 }
 
-.magazines-and-media {
-  padding: 67px 80px 0;
+.how-it-works {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  padding: 128px 80px;
+  background: #fff;
 }
 
-.magazines-and-media h1 {
+.how-it-works .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 754px;
+}
+.how-it-works .title h1 {
   color: #2a2c1f;
+  font-size: 45px;
+  font-weight: 600;
+}
+.how-it-works .title h2 {
+  padding-top: 21px;
+  color: #65665c;
   font-size: 18px;
   font-weight: 400;
-  margin-right: auto; 
+}
+.how-it-works .items {
+  padding-top: 61px;
+  display: flex;
 }
 
-.magazines-and-media img {
-  padding-left: 32px;
+.how-it-works .items .item {
+  text-align: center;
+  width: 405px;
+  margin: 0 32px 0 0;
+  border-radius: 16px;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  padding: 49px 42px 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-it-works .items .item .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #fae8e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-it-works .items .item .icon svg {
+  color: #cf6f49;
+  width: 25px;
+  height: 25px;
+}
+
+.how-it-works .items .item h2 {
+  color: #2a2c1f;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+}
+.how-it-works .items .item h3 {
+  color: #65665c;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 17px;
 }
