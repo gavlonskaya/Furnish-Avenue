@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { AiTwotoneHome } from "react-icons/ai";
-import { BiSolidNotepad } from "react-icons/bi";
-import { BsKeyFill } from "react-icons/bs";
+import { MdHouse } from "react-icons/md";
+import { MdReceipt } from "react-icons/md";
+import { MdKey } from "react-icons/md";
 
 export default function HowItWorks() {
   return (
@@ -16,7 +16,7 @@ export default function HowItWorks() {
       <div className="items">
         <div className="item">
           <div className="icon">
-            <AiTwotoneHome />
+            <MdHouse />
           </div>
           <h2>Find property</h2>
           <h3>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
         </div>
         <div className="item">
           <div className="icon">
-            <BiSolidNotepad />
+            <MdReceipt />
           </div>
           <h2>Make a deal</h2>
           <h3>
@@ -36,7 +36,7 @@ export default function HowItWorks() {
         </div>
         <div className="item">
           <div className="icon">
-            <BsKeyFill />
+            <MdKey />
           </div>
           <h2>Get your keys</h2>
           <h3>
