@@ -1,11 +1,11 @@
 import React from "react";
-import FastForwardProcess from "./components/FastForwardProcess";
+import TheBestHouses from "./components/TheBestHouses";
 
 class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <FastForwardProcess />
+        <TheBestHouses />
       </div>
     );
   }

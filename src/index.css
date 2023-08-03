@@ -14,64 +14,38 @@ body {
   margin: 50px 80px;
 }
 
-.fast-forward-process {
+.the-best-houses {
   display: flex;
   justify-content: space-between;
 }
 
-.fast-forward-process img {
+.the-best-houses img {
   flex: 1;
 }
 
-.fast-forward-process .content {
+.the-best-houses .content {
   flex: 2;
-  padding: 100px 0 60px 80px;
+  padding: 150px 80px 100px 0;
+  margin-right: 80px;
 }
-.fast-forward-process .right-content {
+.the-best-houses .right-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.fast-forward-process h1 {
+.the-best-houses h1 {
   color: #2a2c1f;
   font-size: 48px;
   font-weight: 700;
 }
-.fast-forward-process p {
-  margin-top: 29px;
+.the-best-houses p {
+  margin-top: 28px;
   color: #65665c;
   font-size: 18px;
   font-weight: 400;
 }
-.fast-forward-process .icon {
-  margin-top: 37px;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  background: #fae8e1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.fast-forward-process .icon svg {
-  color: #cf6f49;
-  width: 25px;
-  height: 25px;
-}
-.fast-forward-process h2 {
-  margin-top: 16px;
-  color: #2a2c1f;
-  font-size: 20px;
-  font-weight: 700;
-}
-.fast-forward-process .description {
-  color: #65665c;
-  font-size: 16px;
-  font-weight: 400;
-  height: 72px;
-}
-.fast-forward-process button {
+.the-best-houses button {
   margin-top: 24px;
   width: 192px;
   height: 50px;
@@ -86,22 +60,12 @@ body {
   cursor: pointer;
   transition: all 500ms ease;
 }
-.fast-forward-process button:hover {
+.the-best-houses button:hover {
   border-radius: 6px;
   border: 1px solid silver;
   transform: scale(1.05);
 }
 
-.fast-forward-process .container {
-  display: flex;
-  justify-content: space-between;
-}
-.fast-forward-process .container-card {
-  width: 50%;
-  flex: 1;
-  padding-right: 24px;
-  margin-right: 43px;
-}
-.fast-forward-process .container-button {
+.the-best-houses .container-button {
   display: flex;
 }
