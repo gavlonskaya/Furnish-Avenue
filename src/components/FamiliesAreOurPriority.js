@@ -1,11 +1,11 @@
 import React from "react";
-import { BsFillPeopleFill } from "react-icons/bs";
+import { MdFamilyRestroom } from "react-icons/md";
 
 export default function FamiliesAreOurPriority() {
   return (
     <div className="families-are-our-priority">
       <div className="icon">
-        <BsFillPeopleFill />
+        <MdFamilyRestroom />
       </div>
       <h1>Families are our priority</h1>
       <h2>
