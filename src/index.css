@@ -173,7 +173,6 @@ main .item {
   position: relative;
   padding-bottom: 20px;
   border-radius: 10px 10px 0 0;
-  
 }
 main .item img {
   width: 100%;
@@ -218,56 +217,49 @@ main .add-to-cart {
   cursor: pointer;
   font-weight: 600;
 }
-.families-are-our-priority {
-  margin-top: 128px;
-  border-radius: 24px;
-  background: #65665c;
-  padding: 96px 256px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.blog {
+  background: #f5f5f2;
+  padding-top: 170px;
+  position: relative;
 }
-.families-are-our-priority .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.families-are-our-priority .icon svg {
-  color: #65665c;
-  width: 25px;
-  height: 25px;
-}
-.families-are-our-priority h1 {
-  padding-top: 13px;
-  color: #fff;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-}
-.families-are-our-priority h2 {
-  padding: 29px 0 21px;
-  color: #e7e8e3;
-  font-size: 18px;
-  font-weight: 400;
-}
-.families-are-our-priority button {
-  width: 137px;
-  height: 50px;
-  border-radius: 6px;
-  border: 1px solid #cf6f49;
-  background: #cf6f49;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
+.blog .content {
+  flex: 1;
+  margin-right: 80px;
+  width: 50%;
 }
 
-footer {
-  text-align: center;
-  margin-top: 100px;
+.blog h1 {
+  color: #2a2c1f;
+  font-size: 48px;
+  font-weight: 700;
+}
+.blog h2 {
+  color: #65665c;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 29px;
+}
+.blog .view-all-button {
+  flex: 2;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.blog .view-all-button button {
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  width: 108px;
+  height: 50px;
+  color: #2a2c1f;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.blog .view-all-button button:hover {
+  border: 1px solid silver;
+  transform: scale(1.05);
 }

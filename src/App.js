@@ -1,9 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Items from "./components/Items";
-import Footer from "./components/Footer";
-import FamiliesAreOurPriority from "./components/FamiliesAreOurPriority";
 import Categories from "./components/Categories";
+import Blog from "./components/Blog";
 
 class App extends React.Component {
   constructor(props) {
@@ -79,6 +78,52 @@ class App extends React.Component {
           category: "SD",
         },
       ],
+      blogItems:[
+        {
+          id: 1,
+          img: "cozy-studio.jpg",
+          title: "Cozy studio in Los Angeles",
+          price: "1200",
+          place: "2263 Southlea, Los Angeles",
+          bathroom: "2",
+          bedroom: "2",
+          square: "840",
+          category: "LA",
+        },
+        {
+          id: 2,
+          img: "tiny-home.jpg",
+          title: "Tiny home in San Diego",
+          price: "740000",
+          place: "2569 Halls Corner, Las Vegas",
+          bathroom: "1",
+          bedroom: "2",
+          square: "400",
+          category: "LV",
+        },
+        {
+          id: 3,
+          img: "crown-house.jpg",
+          title: "Crown house in New York",
+          price: "980000",
+          place: "4489 Smity Fielda, New York",
+          bathroom: "2",
+          bedroom: "3",
+          square: "3200",
+          category: "NY",
+        },
+        {
+          id: 4,
+          img: "family-house.jpg",
+          title: "Family house Los Angeles",
+          price: "4200",
+          place: "2263 Southlea, Los Angeles",
+          bathroom: "2",
+          bedroom: "3",
+          square: "1400",
+          category: "LA",
+        },
+      ]
     };
     this.state.currentItems = this.state.items;
     this.addToOrder = this.addToOrder.bind(this);
@@ -116,8 +161,7 @@ class App extends React.Component {
         <Header orders={this.state.orders} onDelete={this.deleteOrder} />
         <Categories chooseCategory={this.chooseCategory} />
         <Items items={this.state.currentItems} onAdd={this.addToOrder} />
-        <FamiliesAreOurPriority />
-        <Footer />
+        <Blog/>
       </div>
     );
   }
