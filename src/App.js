@@ -1,167 +1,77 @@
 import React from "react";
-import Header from "./components/Header";
-import Items from "./components/Items";
-import Categories from "./components/Categories";
 import Blog from "./components/Blog";
+import BlogItems from "./components/BlogItems";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       orders: [],
-      currentItems: [],
-      items: [
+
+      blogItems: [
         {
           id: 1,
-          img: "cozy-studio.jpg",
-          title: "Cozy studio in Los Angeles",
-          price: "1200",
-          place: "2263 Southlea, Los Angeles",
-          bathroom: "2",
-          bedroom: "2",
-          square: "840",
-          category: "LA",
+          img: "the-9-best-homes-in-new-york.jpg",
+          title: "The 9 best homes in New York",
+          date: "May 10, 2023",
+          description:
+            "Integer tincidunt rutrum faucibus. Proin sit amet varius arcu. Aliquam vel leo augue donec.",
+          category: "Trends",
         },
         {
           id: 2,
-          img: "tiny-home.jpg",
-          title: "Tiny home in San Diego",
-          price: "740000",
-          place: "2569 Halls Corner, Las Vegas",
-          bathroom: "1",
-          bedroom: "2",
-          square: "400",
-          category: "LV",
+          img: "how-to-easily-buy-a-house-with-realco.jpg",
+          title: "How to easily buy a house with Realco",
+          date: "May 10, 2023",
+          description:
+            "Praesent nec felis nisl. Phasellus eget lacus a metus fringilla fermentum sit amet.",
+          category: "DIY",
         },
         {
           id: 3,
-          img: "crown-house.jpg",
-          title: "Crown house in New York",
-          price: "980000",
-          place: "4489 Smity Fielda, New York",
-          bathroom: "2",
-          bedroom: "3",
-          square: "3200",
-          category: "NY",
+          img: "renting-houses-complete-guide.jpg",
+          title: "Renting houses - complete guide",
+          date: "May 10, 2023",
+          description:
+            "Nunc in bibendum leo, gravida scelerisque quam nulla interdum tellus a turpis.",
+          category: "DIY",
         },
         {
           id: 4,
-          img: "family-house.jpg",
-          title: "Family house Los Angeles",
-          price: "4200",
-          place: "2263 Southlea, Los Angeles",
-          bathroom: "2",
-          bedroom: "3",
-          square: "1400",
-          category: "LA",
+          img: "renting-houses-complete-guide.jpg",
+          title: "Renting houses - complete guide",
+          date: "May 10, 2023",
+          description:
+            "Nunc in bibendum leo, gravida scelerisque quam nulla interdum tellus a turpis.",
+          category: "DIY",
         },
         {
           id: 5,
-          img: "studio.jpg",
-          title: "Studio in Las Vegas",
-          price: "820000",
-          place: "2569 Halls Corner, Las Vegas",
-          bathroom: "2",
-          bedroom: "3",
-          square: "2400",
-          category: "LV",
+          img: "renting-houses-complete-guide.jpg",
+          title: "Renting houses - complete guide",
+          date: "May 10, 2023",
+          description:
+            "Nunc in bibendum leo, gravida scelerisque quam nulla interdum tellus a turpis.",
+          category: "DIY",
         },
         {
           id: 6,
-          img: "story.jpg",
-          title: "San Diego story",
-          price: "3700",
-          place: "2569 El Segundo, San Diego",
-          bathroom: "1",
-          bedroom: "2",
-          square: "650",
-          category: "SD",
+          img: "renting-houses-complete-guide.jpg",
+          title: "Renting houses - complete guide",
+          date: "May 10, 2023",
+          description:
+            "Nunc in bibendum leo, gravida scelerisque quam nulla interdum tellus a turpis.",
+          category: "DIY",
         },
       ],
-      blogItems:[
-        {
-          id: 1,
-          img: "cozy-studio.jpg",
-          title: "Cozy studio in Los Angeles",
-          price: "1200",
-          place: "2263 Southlea, Los Angeles",
-          bathroom: "2",
-          bedroom: "2",
-          square: "840",
-          category: "LA",
-        },
-        {
-          id: 2,
-          img: "tiny-home.jpg",
-          title: "Tiny home in San Diego",
-          price: "740000",
-          place: "2569 Halls Corner, Las Vegas",
-          bathroom: "1",
-          bedroom: "2",
-          square: "400",
-          category: "LV",
-        },
-        {
-          id: 3,
-          img: "crown-house.jpg",
-          title: "Crown house in New York",
-          price: "980000",
-          place: "4489 Smity Fielda, New York",
-          bathroom: "2",
-          bedroom: "3",
-          square: "3200",
-          category: "NY",
-        },
-        {
-          id: 4,
-          img: "family-house.jpg",
-          title: "Family house Los Angeles",
-          price: "4200",
-          place: "2263 Southlea, Los Angeles",
-          bathroom: "2",
-          bedroom: "3",
-          square: "1400",
-          category: "LA",
-        },
-      ]
     };
-    this.state.currentItems = this.state.items;
-    this.addToOrder = this.addToOrder.bind(this);
-    this.deleteOrder = this.deleteOrder.bind(this);
-    this.chooseCategory = this.chooseCategory.bind(this);
-  }
-
-  deleteOrder(id) {
-    this.setState({ orders: this.state.orders.filter((el) => el.id !== id) });
-  }
-
-  addToOrder(item) {
-    let isInArray = false;
-    this.state.orders.forEach((el) => {
-      if (el.id === item.id) isInArray = true;
-    });
-    if (!isInArray) this.setState({ orders: [...this.state.orders, item] });
-  }
-
-  chooseCategory(category) {
-    if(category === 'all'){
-      this.setState({currentItems: this.state.items})
-      return
-    }
-    this.setState({
-      currentItems: this.state.items.filter(
-        (el) => el.category === category
-      ),
-    });
   }
 
   render() {
     return (
       <div className="wrapper">
-        <Header orders={this.state.orders} onDelete={this.deleteOrder} />
-        <Categories chooseCategory={this.chooseCategory} />
-        <Items items={this.state.currentItems} onAdd={this.addToOrder} />
-        <Blog/>
+        <Blog />
+        <BlogItems blogItems={this.state.blogItems} />
       </div>
     );
   }
