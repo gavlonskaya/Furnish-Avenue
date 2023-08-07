@@ -99,7 +99,7 @@ class App extends React.Component {
   }
 
   chooseCategory(category) {
-    if (category === 'all') {
+    if (category === "all") {
       this.setState({ currentItems: this.state.items });
       return;
     }
@@ -107,7 +107,6 @@ class App extends React.Component {
       currentItems: this.state.items.filter((el) => el.category === category),
     });
   }
-  
 
   render() {
     return (
