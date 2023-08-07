@@ -173,7 +173,6 @@ main .item {
   position: relative;
   padding-bottom: 20px;
   border-radius: 10px 10px 0 0;
-  
 }
 main .item img {
   width: 100%;
@@ -265,6 +264,12 @@ main .add-to-cart {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+.families-are-our-priority button:hover {
+  transform: scale(1.05);
 }
 
 footer {
