@@ -99,16 +99,15 @@ class App extends React.Component {
   }
 
   chooseCategory(category) {
-    if(category === 'all'){
-      this.setState({currentItems: this.state.items})
-      return
+    if (category === 'all') {
+      this.setState({ currentItems: this.state.items });
+      return;
     }
     this.setState({
-      currentItems: this.state.items.filter(
-        (el) => el.category === category
-      ),
+      currentItems: this.state.items.filter((el) => el.category === category),
     });
   }
+  
 
   render() {
     return (
