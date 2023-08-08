@@ -15,12 +15,14 @@ body {
 }
 .blog {
   background: #f5f5f2;
-  padding: 140px 0 80px 0;
   position: relative;
 }
 .blog .content {
+  padding-top: 140px;
+}
+.blog .text-wrapper {
   flex: 1;
-  margin-right: 80px;
+  margin: 0 80px 80px 0;
   width: 60%;
 }
 
@@ -35,13 +37,14 @@ body {
   font-weight: 400;
   margin-top: 29px;
 }
+
 .blog .view-all-button {
-  flex: 2;
   position: absolute;
-  bottom: 0;
+  top: 220px;
   right: 0;
-  padding-bottom: 80px;
 }
+
+
 .blog .view-all-button button {
   border-radius: 6px;
   border: 1px solid #e7e8e3;
@@ -61,8 +64,7 @@ body {
   transform: scale(1.05);
 }
 
-.blog-items {
-  background: #f5f5f2;
+.blog .blog-items {
   display: flex;
   width: 100%;
   flex-wrap: wrap;

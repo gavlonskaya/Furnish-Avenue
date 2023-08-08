@@ -1,6 +1,6 @@
 import React from "react";
 import Blog from "./components/Blog";
-import BlogItems from "./components/BlogItems";
+
 
 class App extends React.Component {
   constructor(props) {
@@ -70,8 +70,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <Blog />
-        <BlogItems blogItems={this.state.blogItems} />
+        <Blog blogItems={this.state.blogItems} />
       </div>
     );
   }
