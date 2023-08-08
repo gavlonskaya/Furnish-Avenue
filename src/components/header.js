@@ -46,6 +46,7 @@ export default function Header(props) {
         )}
       </div>
       <div className="presentation"></div>
+      <div className="favorite-area">Houses in your favorite area</div>
     </header>
   );
 }

@@ -139,6 +139,13 @@ header .shop-cart .item h3 {
   color: #cf6f49;
   font-size: 16px;
 }
+header .favorite-area {
+  color: #2a2c1f;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 128px 0 60px;
+}
 
 .categories div {
   display: inline-block;
