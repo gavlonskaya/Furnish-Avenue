@@ -10,14 +10,17 @@ const showOrders = (props) => {
       {props.orders.map((el) => (
         <Order onDelete={props.onDelete} key={el.id} item={el} />
       ))}
-      <p class="summa"> Сумма: {new Intl.NumberFormat().format(summa)}$</p>
+      <p class="summa">
+        {" "}
+        ORDER TOTAL: {new Intl.NumberFormat().format(summa)}$
+      </p>
     </div>
   );
 };
 const showNothing = () => {
   return (
     <div className="empty">
-      <h2>Корзина пуста</h2>
+      <h2>Your cart is currently empty</h2>
     </div>
   );
 };
