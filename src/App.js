@@ -1,38 +1,41 @@
 import React from "react";
-import WhatCustomersSay from "./components/WhatCustomersSay";
+import Locations from "./components/Locations";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       orders: [],
-      sayItems: [
+      locationsItems: [
         {
           id: 1,
-          stars: 5,
-          description:
-            "Aliquam erat volutpat. Nulla pretium nec urna et convallis. Ut varius mi lacus, nec molestie libero ultricies nec. Aenean lacinia dui elit, ut gravida quam.",
-          name: "Michael Webb",
-          category: "Customer",
-          img: "michael-webb.jpg",
+          city: "San Francisco",
+          state: "CA",
         },
         {
           id: 2,
-          stars: 3,
-          description:
-            "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi pretium iaculis ultricies. Aenean in leo vitae tortor.",
-          name: "Amber Keene",
-          category: "Customer",
-          img: "amber-keene.jpg",
+          city: "Los Angeles",
+          state: "CA",
         },
         {
           id: 3,
-          stars: 4,
-          description:
-            "Condimentum viverra orci. Pellentesque suscipit odio nisl, non ultricies purus mattis eget. In placerat, lorem a sodales ullamcorper, eros nibh laoreet nisl.",
-          name: "Sarah Tarleton",
-          category: "Customer",
-          img: "sarah-tarleton.jpg",
+          city: "San Diego",
+          state: "CA",
+        },
+        {
+          id: 4,
+          city: "New York",
+          state: "NY",
+        },
+        {
+          id: 5,
+          city: "Las Vegas",
+          state: "NV",
+        },
+        {
+          id: 6,
+          city: "Miami",
+          state: "FL",
         },
       ],
     };
@@ -41,7 +44,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <WhatCustomersSay sayItems={this.state.sayItems} />
+        <Locations locationsItems={this.state.locationsItems} />
       </div>
     );
   }

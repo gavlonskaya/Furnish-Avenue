@@ -14,75 +14,110 @@ body {
   margin: 50px 80px;
 }
 
-.what-customers-say {
+.locations {
   background: #ffffff;
-  padding: 160px 0 160px;
-}
-.what-customers-say .stars svg {
-  width: 24px;
-  height: 24px;
-  color: #cf6f49;
-}
-.what-customers-say h1 {
-  color: #2a2c1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.locations h1 {
+  color: #2a2c1f;
   font-size: 48px;
   font-weight: 700;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
-.what-customers-say h2 {
+.locations h2 {
   color: #65665c;
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 80px;
+  width: 60%;
 }
 
-.what-customers-say .what-customers-say-items {
+.locations .locations-items {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
+  margin: 20px 0 80px 0;
 }
 
-.say-item {
+.locations-item {
   border-radius: 16px;
   border: 1px solid #e7e8e3;
   background: #fff;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  width: 30%;
+  width: 27%;
   padding: 33px;
-  margin: 0 32px 0;
-  position: relative;
+  margin: 0 16px 16px 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.say-item .stars {
-  margin-bottom: 27px;
-}
-
-.say-item h1 {
+.locations-item h1 {
   color: #2a2c1f;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 29px;
+  margin-bottom: 12px;
   text-align: left;
+  font-size: 20px;
+  font-weight: 700;
 }
 
-.say-item img {
-  margin-right: 16px;
+.locations-item button {
+  width: 141px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+  color: #2a2c1f;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.locations-item button {
+  width: 141px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: all 500ms ease;
+  color: #2a2c1f;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+.locations-item button:hover {
+  transform: scale(1.05);
+  color: #cf6f49;
 }
 
-.say-item .content {
+.button-locations {
   display: flex;
 }
-
-.say-item .content h2 {
+.button-locations button {
+  width: 192px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
   color: #2a2c1f;
   font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 1px;
-}
-
-.say-item .content p {
-  color: #65665c;
-  font-size: 16px;
   font-weight: 400;
+  margin-right: 13px;
+  cursor: pointer;
+  transition: all 500ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-locations button:hover {
+  border-radius: 6px;
+  border: 1px solid silver;
+  transform: scale(1.05);
 }
