@@ -1,50 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@700&family=Tinos&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: #fff;
-  color: #222222;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
-.wrapper {
-  width: 1280px;
-  margin: 50px auto;
-}
-
 .how-it-works {
   display: flex;
   flex-direction: column;
-  padding: 128px 80px;
   background: #fff;
 }
-
-.how-it-works .title {
+.how-it-works__title {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
   max-width: 754px;
 }
-.how-it-works .title h1 {
+.how-it-works__title-heading {
   color: #2a2c1f;
   font-size: 45px;
   font-weight: 600;
 }
-.how-it-works .title h2 {
-  padding-top: 21px;
+.how-it-works__title-subheading {
   color: #65665c;
   font-size: 18px;
   font-weight: 400;
 }
-.how-it-works .items {
+.how-it-works__items {
   padding-top: 61px;
   display: flex;
 }
-
-.how-it-works .items .item {
+.how-it-works__item {
   text-align: center;
   width: 405px;
   margin: 0 32px 0 0;
@@ -57,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.how-it-works .items .item .icon {
+.how-it-works__item-icon {
   width: 48px;
   height: 48px;
   border-radius: 8px;
@@ -66,21 +47,28 @@ body {
   justify-content: center;
   align-items: center;
 }
-.how-it-works .items .item .icon svg {
+.how-it-works__item-icon-svg {
   color: #cf6f49;
   width: 25px;
   height: 25px;
 }
-
-.how-it-works .items .item h2 {
+.how-it-works__item-heading {
   color: #2a2c1f;
   font-size: 24px;
   font-weight: 700;
-  padding-top: 24px;
 }
-.how-it-works .items .item h3 {
+.how-it-works__item-subheading {
   color: #65665c;
   font-size: 16px;
   font-weight: 400;
-  padding-top: 17px;
+}
+body {
+  background-color: #fff;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.wrapper {
+  width: 1280px;
+  margin: 50px auto;
 }
