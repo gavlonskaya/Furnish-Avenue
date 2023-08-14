@@ -5,19 +5,28 @@ export class BlogItem extends Component {
   render() {
     return (
       <div className="blog-item">
-        <img
-          src={"./img/" + this.props.blogItem.img}
-          alt={this.props.blogItem.title}
-        />
-        <div className="category-date">
-          <p className="category">{this.props.blogItem.category}</p>
-          <p className="date">{this.props.blogItem.date}</p>
+        <div className="blog-item__icon">
+          <img
+            src={"./img/" + this.props.blogItem.img}
+            alt={this.props.blogItem.title}
+          />
         </div>
-        <h1>{this.props.blogItem.title}</h1>
-        <h2>{this.props.blogItem.description}</h2>
-        <button className="read-more">
-          Read more <MdOutlineChevronRight />
-        </button>
+
+        <div className="blog-item__header">
+          <div className="blog-item__category">
+            {this.props.blogItem.category}
+          </div>
+          <div className="blog-item__date">{this.props.blogItem.date}</div>
+        </div>
+        <div className="blog-item__text">
+          <div className="blog-item__title">{this.props.blogItem.title}</div>
+          <div className="blog-item__description">
+            {this.props.blogItem.description}
+          </div>
+          <button className="blog-item__button">
+            Read more <MdOutlineChevronRight />
+          </button>
+        </div>
       </div>
     );
   }

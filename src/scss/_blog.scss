@@ -1,0 +1,124 @@
+.blog {
+  padding: 0px 80px;
+  background: #f5f5f2;
+  position: relative;
+  overflow: hidden;
+
+  &__header {
+    padding-top: 140px;
+  }
+  &__title {
+    flex: 1;
+    margin-bottom: 80px;
+    width: 60%;
+  }
+  &__items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__button {
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    border-radius: 6px;
+    border: 1px solid #e7e8e3;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    width: 108px;
+    height: 50px;
+    color: #2a2c1f;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 500ms ease;
+
+    &:hover {
+      border: 1px solid silver;
+      transform: scale(1.05);
+    }
+  }
+}
+.title {
+  color: #2a2c1f;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 29px;
+}
+.text {
+  color: #65665c;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.blog-item {
+  width: 30%;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 24px;
+  border-radius: 0 0 16px 16px;
+  border: 1px solid #e7e8e3;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+
+  &__icon img {
+    width: 100%;
+  }
+  &__header {
+    display: flex;
+    padding: 28px 21px;
+    align-items: center;
+  }
+
+  &__category {
+    padding: 4px 8px;
+    border-radius: 32px;
+    background: #fae8e1;
+    color: #2a2c1f;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 16px;
+  }
+  &__date {
+    color: #65665c;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__text {
+    margin: 0 24px;
+  }
+  &__title {
+    color: #2a2c1f;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 9px;
+  }
+  &__description {
+    margin: 0 50px 24px 0px;
+    color: #65665c;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    color: #2a2c1f;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: none;
+    cursor: pointer;
+    &:hover {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+}
+.wrapper {
+  max-width: 1900px;
+  padding: 0;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import Blog from "./components/Blog";
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -68,11 +67,7 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="wrapper">
-        <Blog blogItems={this.state.blogItems} />
-      </div>
-    );
+    return <Blog blogItems={this.state.blogItems} />;
   }
 }
 export default App;
