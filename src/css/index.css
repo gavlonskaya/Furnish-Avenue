@@ -1,5 +1,77 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@700&family=Tinos&display=swap");
+.families-are-our-priority {
+  padding: 96px 258px;
+  border-radius: 24px;
+  background: #65665c;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.families-are-our-priority__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #65665c;
+}
+.families-are-our-priority__icon svg {
+  width: 32px;
+  height: 32px;
+}
+.families-are-our-priority__title {
+  margin-bottom: 21px;
+}
+.families-are-our-priority__title.title {
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+}
+.families-are-our-priority__title.text {
+  color: #e7e8e3;
+  font-size: 18px;
+  font-weight: 400;
+}
+.families-are-our-priority__button {
+  width: 137px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.families-are-our-priority__button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .footer__header {
   padding: 64px 80px 24px 80px;
   background-color: #fff;
@@ -24,11 +96,41 @@
   display: flex;
   margin: 0 90px 16px 0;
 }
+.footer__menu.title, .footer__menu.link {
+  color: #2a2c1f;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid-column;
+}
+.footer__menu.link {
+  font-size: 14px;
+}
+.footer__menu.link:hover {
+  color: #cf6f49;
+}
 .footer__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
+}
+.footer__title.title {
+  color: #2a2c1f;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
+          break-inside: avoid-column;
+}
+.footer__title.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #65665c;
+  margin-bottom: 15px;
 }
 .footer__input {
   margin: 0 16px 16px 0;
@@ -87,33 +189,7 @@
   display: flex;
   gap: 12px;
 }
-
-.title,
-.link {
-  color: #2a2c1f;
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
-  -webkit-column-break-inside: avoid;
-     -moz-column-break-inside: avoid;
-          break-inside: avoid-column;
-}
-
-.link {
-  font-size: 14px;
-}
-.link:hover {
-  color: #cf6f49;
-}
-
-.text {
-  font-size: 16px;
-  font-weight: 400;
-  color: #65665c;
-  margin-bottom: 15px;
-}
-
-svg {
+.footer__social-media svg {
   width: 24px;
   height: 24px;
 }
@@ -443,82 +519,4 @@ header .favorite-area {
   border-radius: 50%;
   cursor: pointer;
   font-weight: 600;
-}
-
-.families-are-our-priority {
-  margin-top: 128px;
-  border-radius: 24px;
-  background: #65665c;
-  padding: 96px 256px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.families-are-our-priority .icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  background: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.families-are-our-priority .icon svg {
-  color: #65665c;
-  width: 25px;
-  height: 25px;
-}
-
-.families-are-our-priority h1 {
-  padding-top: 13px;
-  color: #fff;
-  text-align: center;
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.families-are-our-priority h2 {
-  padding: 29px 0 21px;
-  color: #e7e8e3;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.families-are-our-priority button {
-  width: 137px;
-  height: 50px;
-  border-radius: 6px;
-  border: 1px solid #cf6f49;
-  background: #cf6f49;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-
-.families-are-our-priority button:hover {
-  -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
 }

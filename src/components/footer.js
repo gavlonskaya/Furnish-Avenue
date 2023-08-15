@@ -87,7 +87,7 @@ export class footer extends Component {
         </div>
         <div className="footer__info">
           <div className="footer__name">© Furnish Avenue by Gavlonskaya.</div>
-          <div className="footer__social-media svg">
+          <div className="footer__social-media">
             <RiFacebookFill />
             <RiInstagramLine />
             <RiTwitterFill />

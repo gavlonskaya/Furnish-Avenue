@@ -4,16 +4,18 @@ import { MdFamilyRestroom } from "react-icons/md";
 export default function FamiliesAreOurPriority() {
   return (
     <div className="families-are-our-priority">
-      <div className="icon">
+      <div className="families-are-our-priority__icon">
         <MdFamilyRestroom />
       </div>
-      <h1>Families are our priority</h1>
-      <h2>
+      <div className="families-are-our-priority__title title">
+        Families are our priority
+      </div>
+      <div className="families-are-our-priority__title text">
         Curabitur eget aliquam elit. In mauris purus, auctor a eleifend non,
         placerat vel arcu. In non consectetur lorem. Morbi non varius sapien
         suscipit mauri.
-      </h2>
-      <button>Get started</button>
+      </div>
+      <button className="families-are-our-priority__button">Get started</button>
     </div>
   );
 }
