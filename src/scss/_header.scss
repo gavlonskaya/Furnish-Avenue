@@ -1,0 +1,249 @@
+
+header {
+    position: relative;
+  }
+  header .logo {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  header ul.nav {
+    float: right;
+    list-style: none;
+  }
+  header ul.nav li {
+    display: inline;
+    margin-left: 45px;
+    cursor: pointer;
+    color: #222222;
+    font-weight: 600;
+    font-size: 20px;
+    transition: opacity 500ms ease;
+  }
+  header ul.nav li:hover {
+    opacity: 0.5;
+  }
+  
+  header .presentation {
+    margin: 50px 0;
+    background: url("../img/bg.jpeg") no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    position: relative;
+  }
+  header .presentation::after {
+    content: "Find house for your family in minutes";
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 560px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #2a2c1f;
+  }
+  header .presentation::before {
+    content: "Aenean sodales mauris quis tellus facilisis, vel mattis magna. Interdum curabitur eget aliquam elit in mauris purus";
+    position: absolute;
+    top: 235px;
+    left: 80px;
+    width: 560px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2a2c1f;
+  }
+  
+  header .shop-cart-button {
+    float: right;
+    cursor: pointer;
+    transition: color, transform 500ms ease;
+    padding-top: 4px;
+  }
+  
+  header .shop-cart-button:hover,
+  header .shop-cart-button.active {
+    color: #cf6f49;
+    transform: scale(1.25);
+  }
+  
+  header .shop-cart {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 470px;
+    background: #fafafa;
+    -webkit-box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+    -moz-box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+    box-shadow: 25px 11px 26px -1px rgba(101, 102, 92, 1);
+    z-index: 1000;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  header .shop-cart .empty h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  header .shop-cart .summa {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  header .shop-cart .item {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+  header .shop-cart .item .delete-icon {
+    color: #cf6f49;
+    float: right;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    transform: color, transform 500ms ease;
+  }
+  header .shop-cart .item .delete-icon:hover {
+    color: #ae3a0c;
+    transform: scale(1.25);
+  }
+  
+  header .shop-cart .item img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  header .shop-cart .item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  header .shop-cart .item h3 {
+    color: #cf6f49;
+    font-size: 16px;
+  }
+  header .favorite-area {
+    color: #2a2c1f;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 128px 0 60px;
+  }
+  
+  .categories div {
+    display: inline-block;
+    border-radius: 32px;
+    background: #e7e8e3;
+    color: #2a2c1f;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px 12px;
+    margin: 0 15px 25px 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+  }
+  .categories div.active {
+    background-color: #cf6f49;
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .categories div:hover {
+    transform: scale(1.1);
+  }
+  
+  .items-card {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 80px;
+  }
+  .items-card.item {
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    border-radius: 10px 10px 0 0;
+  }
+  .items-card.item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: transform 500ms ease;
+  }
+  .items-card .item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .items-card h2 {
+    margin: 24px 20px 5px;
+    color: #2a2c1f;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .items-card h3 {
+    margin: 0 20px;
+    color: #2a2c1f;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .items-card p,
+  .items-card b {
+    margin: 16px 20px;
+    color: #65665c;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .items .button-items {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  .items button {
+    width: 192px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #e7e8e3;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+    color: #2a2c1f;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 13px;
+    cursor: pointer;
+    transition: all 500ms ease;
+  }
+  
+  .items .button-сontact-agent {
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .items button:hover {
+    border-radius: 6px;
+    border: 1px solid silver;
+    transform: scale(1.05);
+  }
+  
+  .items-card.add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #fae8e1;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #cf6f49;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+  }

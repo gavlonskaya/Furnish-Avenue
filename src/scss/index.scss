@@ -1,3 +1,9 @@
+@import "_footer";
+// @import "_header";
+// @import "_families-are-our-priority";
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@700&family=Tinos&display=swap");
 * {
   margin: 0;
@@ -13,6 +19,15 @@ body {
   max-width: 1900px;
   margin: 50px 80px;
 }
+
+
+
+
+
+
+
+
+
 
 header {
   position: relative;
@@ -40,7 +55,7 @@ header ul.nav li:hover {
 
 header .presentation {
   margin: 50px 0;
-  background: url("./img/bg.jpeg") no-repeat;
+  background: url("../img/bg.jpeg") no-repeat;
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -315,109 +330,4 @@ header .favorite-area {
 
 .families-are-our-priority button:hover {
   transform: scale(1.05);
-}
-
-.footer .footer-page {
-  background-color: #fff;
-  display: flex;
-  padding: 64px 0 64px 0;
-}
-
-.footer .footer-page .logo {
-  font-weight: 600;
-  font-size: 20px;
-  margin-right: 95px;
-  white-space: nowrap;
-}
-.footer .footer-page .menu {
-  column-count: 3;
-}
-.footer .footer-page .menu p,
-.footer .footer-page .menu h1 {
-  margin: 0 90px 16px 0;
-  color: #2a2c1f;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-}
-.footer .footer-page .menu h1 {
-  font-size: 16px;
-  break-inside: avoid-column;
-}
-
-.footer .footer-page .menu p:hover {
-  color: #cf6f49;
-}
-
-.footer .footer-page .menu a {
-  text-decoration: none;
-}
-
-.footer .footer-page .subscribe h1,
-.footer .footer-page .subscribe h2 {
-  font-size: 16px;
-  color: #2a2c1f;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.footer .footer-page .subscribe h2 {
-  color: #65665c;
-  margin-top: 10px;
-}
-.footer .footer-page .subscribe input {
-  margin: 15px 16px 16px 0;
-  width: 241px;
-  height: 48px;
-  border-radius: 6px;
-  border: 1px solid #e7e8e3;
-  background: #fff;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
-  color: #65665c;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 14px;
-}
-
-.footer .footer-page .subscribe button {
-  width: 127px;
-  height: 50px;
-  border-radius: 6px;
-  border: 1px solid #cf6f49;
-  background: #cf6f49;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: all 500ms ease;
-}
-
-.footer .footer-page .subscribe button:hover {
-  transform: scale(1.02);
-}
-
-.footer .footer-page .subscribe p {
-  color: #65665c;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.footer .footer-info {
-  background-color: #f5f5f2;
-  display: flex;
-  padding: 25px 64px;
-}
-.footer .footer-info p {
-  color: #65665c;
-  font-size: 14px;
-  font-weight: 400;
-}
-.footer .footer-info .social-media {
-  margin-left: auto;
-}
-.footer .footer-info .social-media svg {
-  margin-right: 12px;
-  width: 23px;
-  height: 23px;
-  color: #2a2c1f;
 }

@@ -7,94 +7,94 @@ import { RiLinkedinBoxFill } from "react-icons/ri";
 export class footer extends Component {
   render() {
     return (
-      <footer className="footer">
-        <div className="footer-page">
-          <span className="logo">Furnish Avenue</span>
-          <div className="menu">
-            <a>
-              <h1>Pages</h1>
+      <div className="footer">
+        <div className="footer__header">
+          <div className="footer__logo">Furnish Avenue</div>
+          <div className="footer__page">
+            <div className="footer__menu title">Pages</div>
+            <a href="#" className="footer__menu link">
+              Home
             </a>
-            <a href="#">
-              <p>Home</p>
+            <a href="#" className="footer__menu link">
+              About
             </a>
-            <a href="#">
-              <p>About</p>
+            <a href="#" className="footer__menu link">
+              Blog
             </a>
-            <a href="#">
-              <p>Blog</p>
+            <a href="#" className="footer__menu link">
+              Agents
             </a>
-            <a href="#">
-              <p>Agents</p>
+            <a href="#" className="footer__menu link">
+              Contact
             </a>
-            <a href="#">
-              <p>Contact</p>
+            <a href="#" className="footer__menu link">
+              FAQs
             </a>
-            <a href="#">
-              <p>FAQs</p>
+            <a href="#" className="footer__menu link">
+              Properties
             </a>
-            <a href="#">
-              <p>Properties</p>
+            <div className="footer__menu title">CMS Pages</div>
+            <a href="#" className="footer__menu link">
+              Property
             </a>
-            <a>
-              <h1>CMS Pages</h1>
+            <a href="#" className="footer__menu link">
+              Property Single
             </a>
-            <a href="#">
-              <p>Property</p>
+            <a href="#" className="footer__menu link">
+              Blog Categories
             </a>
-            <a href="#">
-              <p>Property Single</p>
+            <a href="#" className="footer__menu link">
+              Blog Single
             </a>
-            <a href="#">
-              <p>Blog Categories</p>
+            <a href="#" className="footer__menu link">
+              Agent Single
             </a>
-            <a href="#">
-              <p>Blog Single</p>
+            <div className="footer__menu title">Utility Pages</div>
+            <a href="#" className="footer__menu link">
+              Style Guide
             </a>
-            <a href="#">
-              <p>Agent Single</p>
+            <a href="#" className="footer__menu link">
+              Changelog
             </a>
-            <a>
-              <h1>Utility Pages</h1>
+            <a href="#" className="footer__menu link">
+              Licenses
             </a>
-            <a href="#">
-              <p>Style Guide</p>
+            <a href="#" className="footer__menu link">
+              404
             </a>
-            <a href="#">
-              <p>Changelog</p>
+            <a href="#" className="footer__menu link">
+              Password
             </a>
-            <a href="#">
-              <p>Licenses</p>
-            </a>
-            <a href="#">
-              <p>404</p>
-            </a>
-            <a href="#">
-              <p>Password</p>
-            </a>
-            <a href="#">
-              <p>Search</p>
+            <a href="#" className="footer__menu link">
+              Search
             </a>
           </div>
-          <div className="subscribe">
-            <h1>Subscribe</h1>
-            <h2>
+          <div className="footer__subscribe">
+            <div className="footer__title title">Subscribe</div>
+            <div className="footer__title text">
               Join our newsletter to stay up to date on features and releases.
-            </h2>
-            <input type="email" placeholder="Enter your email"></input>
-            <button>Subscribe</button>
-            <p>By subscribing you agree to with our Privacy Policy</p>
+            </div>
+            <input
+              className="footer__input"
+              type="email"
+              placeholder="Enter your email"
+            ></input>
+            <button className="footer__button">Subscribe</button>
+            <div className="footer__subscribing">
+              By subscribing you agree to with our Privacy Polic
+            </div>
           </div>
         </div>
-        <div className="footer-info">
-          <p>© Furnish Avenue by Gavlonskaya.</p>
-          <div className="social-media">
+        <div className="footer__info">
+          <div className="footer__name">© Furnish Avenue by Gavlonskaya.</div>
+          <div className="footer__social-media svg">
             <RiFacebookFill />
             <RiInstagramLine />
             <RiTwitterFill />
             <RiLinkedinBoxFill />
           </div>
         </div>
-      </footer>
+      </div>
     );
   }
 }

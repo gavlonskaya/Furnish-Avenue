@@ -110,11 +110,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="wrapper">
-        <Header orders={this.state.orders} onDelete={this.deleteOrder} />
-        <Categories chooseCategory={this.chooseCategory} />
-        <Items items={this.state.currentItems} onAdd={this.addToOrder} />
-        <FamiliesAreOurPriority />
+      <div className="furnish-avenue">
+        <div className="wrapper">
+          <Header orders={this.state.orders} onDelete={this.deleteOrder} />
+          <Categories chooseCategory={this.chooseCategory} />
+          <Items items={this.state.currentItems} onAdd={this.addToOrder} />
+          <FamiliesAreOurPriority />
+        </div>
         <Footer />
       </div>
     );
